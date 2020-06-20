@@ -1,0 +1,140 @@
+.book-details-container {
+    .book-details {
+        text-align: left;
+        width: 100%;
+        .book-img {
+            width: 60%;
+            margin-inline-end: 20px;
+            position: relative;
+            .sale {
+                position: absolute;
+                width: 200px;
+            }
+        }
+        .right-side {
+            .book-desc {
+                > * {
+                    margin-bottom: 20px;
+                }
+                h1 {
+                    color: $blueClr;
+                    font-size: rem(30px);
+                    text-transform: uppercase;
+                }
+                .pricy {
+                    color: crimson;
+                }
+                .cheap {
+                    color: rgb(20, 220, 80);
+                }
+                h5 {
+                    color: $blueClr;
+                }
+                .long-text {
+                    .toggle-length {
+                        color: blue;
+                        font-size: rem(14px);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .review-form {
+                width: 100%;
+                margin-bottom: 20px;
+                .name-rating {
+                    margin-bottom: 10px;
+                    .reader-name {
+                        width: 45%;
+                        height: 30px;
+                        border: none;
+                        outline: none;
+                        background-color: #ececec;
+                        padding-inline-start: 10px;
+                        border-radius: 999px;
+                        color: $blueClr;
+                    }
+                    .rating {
+                        width: 45%;
+                        .star-btn {
+                            width: 25px;
+                            cursor: pointer;
+                            .yellow {
+                                fill: #ffd800;
+                            }
+                            path {
+                                fill: #e2e2e2;
+                            }
+                        }
+                    }
+                }
+                .review-submit {
+                    .review {
+                        width: 100%;
+                        height: 100px;
+                        resize: none;
+                        outline: none;
+                        padding: 10px;
+                        border-radius: 5px 5px 0 0;
+                    }
+                    .submit {
+                        text-transform: uppercase;
+                        cursor: pointer;
+                        border: none;
+                        color: white;
+                        background-color: $blueClr;
+                        width: 100%;
+                        height: 25px;
+                        transition: 0.2s;
+                        border-radius: 0 0 5px 5px;
+                        outline: none;
+                    }
+                    .submit:hover {
+                        background-color: darken($color: $blueClr, $amount: 10%);
+                    }
+                }
+            }
+            .review-preview {
+                margin-bottom: 10px;
+                min-height: 100px;
+                padding: 5px;
+                border-bottom: 1px solid $blueClr;
+                h5 {
+                    margin-bottom: 5px;
+                    color: $blueClr;
+                    font-size: rem(15px);
+                }
+                p {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-size: rem(14px);
+                }
+                .rating {
+                    width: 20%;
+                    align-self: flex-start;
+                    .rating-star {
+                        width: 20px;
+                        path {
+                            fill: #e2e2e2;
+                        }
+                        .yellow {
+                            fill: #ffd800;
+                        }
+                    }
+                }
+                .delete-btn {
+                    background-color: $blueClr;
+                    border: none;
+                    border-radius: 3px;
+                    color: white;
+                    width: 100px;
+                    transition: .2s;
+                    cursor: pointer;
+                    outline: none;
+                }
+                .delete-btn:hover {
+                    background-color: darken($color: $blueClr, $amount: 15%);
+                }
+            }
+        }
+    }
+}

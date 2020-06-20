@@ -1,0 +1,25 @@
+.nav-container {
+    z-index: 3;
+    background-color: $blueClr;
+    margin-bottom: 30px;
+    .nav-bar {
+        height: 50px;
+        .main-logo {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .nav-links {
+            .links-seperator {
+                margin: 0 10px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

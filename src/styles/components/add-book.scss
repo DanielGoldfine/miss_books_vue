@@ -1,0 +1,50 @@
+.add-book {
+    position: relative;
+    margin-bottom: 20px;
+    input {
+        width: 490px;
+        height: 30px;
+        border: none;
+        border-bottom: 1px solid $blueClr;
+        padding-inline-start: 10px;
+        outline: none;
+        color: $blueClr;
+        font-size: rem(18px);
+    }
+    .found-books {
+        z-index: 1;
+        width: 550px;
+        text-align: left;
+        border: 1px solid black;
+        position: absolute;
+        background-color: white;
+        top: 32px;
+        max-height: 300px;
+        overflow: auto;
+        .found-item {
+            padding: 0 10px;
+            cursor: pointer;
+            p {
+                margin-bottom: 0;
+                padding: 2px 0;
+            }
+        }
+        .found-item:hover {
+            background-color: $blueClr;
+            color: white;
+        }
+    }
+    .found-books::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 999px;
+    }
+
+    .found-books::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .found-books::-webkit-scrollbar-thumb {
+        background-color: rgb(158, 158, 158);
+        border-radius: 100px;
+    }
+}

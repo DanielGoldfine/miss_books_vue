@@ -1,0 +1,33 @@
+.book-filter {
+    margin-bottom: 30px;
+    form {
+        .book-title {
+            border-radius: 999px;
+            border: none;
+            box-shadow: 1px 1px 4px #00000052;
+            color: $blueClr;
+            height: 35px;
+            width: 350px;
+            padding-inline-start: 25px;
+            margin-inline-end: 20px;
+            outline: none;
+            font-size: rem(20px);
+        }
+        ::placeholder {
+            color: rgb(204, 204, 204);
+        }
+        .price-inputs {
+            height: 50px;
+            input {
+                border: none;
+                color: $blueClr;
+                border-bottom: 1px solid rgb(204, 204, 204);
+                width: 120px;
+                outline: none;
+            }
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+    }
+}

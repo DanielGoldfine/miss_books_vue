@@ -1,0 +1,57 @@
+.fs18 {font-size: rem(18px);}
+.fs20 {font-size: rem(20px);}
+.fs24 {font-size: rem(24px);}
+.fs28 {font-size: rem(28px);}
+.fs30 {font-size: rem(30px);}
+
+// Flex-Helpers
+
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.justify-space-between {
+        justify-content: space-between;
+    }
+    &.justify-space-around {
+        justify-content: space-around;
+    }
+    &.justify-space-even {
+        justify-content: space-evenly;
+    }
+    &.justify-flex-end {
+        justify-content: flex-end;
+    }
+    &.justify-flex-start {
+        justify-content: flex-start;
+    }
+    &.align-center {
+        align-items: center;
+    }
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+// Spread helpers
+
+.raw-spread {
+    > * {
+        margin-inline-end: 20px;
+    }
+}
+
+// Media Helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
